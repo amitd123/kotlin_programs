@@ -1,0 +1,19 @@
+// inline function 
+ //if you see by code of this then you can see compiler copied inline function lines here and function calling overhead will not be there
+
+fun main() {
+    normal()
+}
+
+
+fun normal(){
+      println(" before inline function")
+      inlineFun()                         //if you see by code of this then you can see compiler copied inline function lines here and function calling overhead will not be there
+      println(" After inline function")
+    
+}
+
+
+inline fun inlineFun(){
+    println(" this is example of inline function")
+}
