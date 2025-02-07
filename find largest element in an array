@@ -1,0 +1,14 @@
+fun main() {
+    val number = findLargestElementInArray(intArrayOf(10,209,4,874,747,7,8,5,4))
+    println(number)
+}
+
+fun findLargestElementInArray(inputArray: IntArray) : Int{
+    var largestElement = inputArray.get(0)
+    for (i in 0..inputArray.size - 2 ){
+        if(inputArray.get(i) > largestElement){
+            largestElement  = inputArray.get(i) 
+        }
+    }
+    return largestElement
+}
