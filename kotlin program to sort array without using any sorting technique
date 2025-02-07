@@ -1,0 +1,22 @@
+// kotlin program to sort array without using any sorting technique
+
+
+fun main() {
+    val inputArray = intArrayOf(5,3,6,7,2,45,67,32,45,9)
+    
+    sortArray(inputArray)
+}
+
+fun sortArray(inputArray :  IntArray){
+    for (i in 0..inputArray.size - 1 ){
+        for( j in i+1..inputArray.size -1){
+            if (inputArray.get(i) > inputArray.get(j)){
+                var temp = inputArray.get(i)
+                inputArray.set(i,inputArray.get(j))
+                inputArray.set(j,temp)
+            }
+        }
+    }
+    println("sorted array is "+ inputArray.joinToString())
+}
+
