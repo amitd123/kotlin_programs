@@ -1,0 +1,13 @@
+//program to reverse number
+
+fun main() {
+    var num = 1234
+    var reversed = 0
+    while (num != 0){
+        var digit  = num % 10
+         reversed  = reversed * 10 + digit
+        num/=10
+    }
+    
+    println(" reversed number is $reversed")
+}
