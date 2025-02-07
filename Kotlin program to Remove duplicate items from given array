@@ -1,0 +1,11 @@
+//Kotlin program to Remove duplicate items from given array
+
+
+import kotlin.collections.sort
+
+fun main() {
+  var inputArray = arrayOf("s","a","b","c","a","b","c","d","e","f")
+ var result = inputArray.distinct().sorted()
+ 
+  println(""+result.joinToString())
+}
