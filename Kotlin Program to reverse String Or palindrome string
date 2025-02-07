@@ -1,0 +1,24 @@
+// kotlin program to reverse a string 
+
+// kotlin program to palindrom a string 
+
+// input string "go away from my life"
+
+fun main() {
+  reverseString("go away from my life")
+}
+
+fun reverseString(a: String ){
+    var reverseString  = ""
+    for (i in a.length -1 downTo 0){
+        reverseString = reverseString + a.get(i)
+    }
+    
+    println("reverse string is $reverseString")
+    
+    if(a == reverseString){
+        println("given string is palindrome")
+    }else{
+         println("given string is not palindrome")
+    }
+}
