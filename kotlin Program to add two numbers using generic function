@@ -1,0 +1,7 @@
+fun main() {
+    genericAddition(10,20)
+}
+
+fun <T: Number> genericAddition(a:T,b:T){
+    val result : T= (a.toDouble()) + (b.toDouble())
+}
