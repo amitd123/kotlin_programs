@@ -1,0 +1,7 @@
+fun main() {
+     val result1 = lamdaExpresssionSum(2,3)
+   println(""+result1)
+}
+
+val lamdaExpresssionSum = { a :Int , b : Int -> a + b}
+
