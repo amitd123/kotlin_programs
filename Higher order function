@@ -1,0 +1,22 @@
+//Higher order function
+
+fun main() {
+    
+  //higherOrderFunction(5,10,add)  //  using add lamda expression
+  
+  higherOrderFunction(5,10,::addition) // using normal function
+
+}
+
+val add = {a: Int , b:Int ->  a*b}   // this is lamda expression
+
+fun higherOrderFunction (x:Int, y:Int , addd : (Int,Int) -> Int){
+    
+    val result = addd(10,20) + (x * y)
+    println(""+result)  
+    
+}
+
+fun addition (x: Int , y:Int ):Int {   // normal function
+    return x*y
+}
