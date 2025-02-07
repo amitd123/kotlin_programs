@@ -1,0 +1,25 @@
+fun main() {     
+     val resultArrayRightRotated = rotateArrayToRight(intArrayOf(1,2,3,4,5,6,7), 3, 7)
+    println(resultArrayRightRotated.joinToString())
+}
+
+fun rotateArrayToRight(inputArray:IntArray, d:Int, n: Int):IntArray{
+    var resultArray = IntArray(n)
+    if(d > n){
+        println("rotation not possible")
+        return resultArray
+    }
+    
+    var m = 0
+    for (i in n-d..n-1){
+        resultArray[m] = inputArray[i]
+        m++
+    }
+    var o= d
+    for (i in 0..n-d-1){
+        resultArray[o] = inputArray[i]
+        o++
+    }
+    return resultArray
+}
+
