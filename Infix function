@@ -1,0 +1,12 @@
+// Infix function
+
+fun main() {
+    val obj =a()
+    val result =  obj exp 20
+    println(""+result)
+}
+class a {
+   infix fun exp (a: Int ):Int{
+      return a * a
+   }
+}
