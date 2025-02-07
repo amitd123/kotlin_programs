@@ -1,0 +1,20 @@
+// kotlin program to shift all 0 to right 
+
+fun main() {
+  var arrayOfNum : IntArray = intArrayOf(5, 6, 0, 4, 6, 0, 9, 0, 8 )
+  shiftAll0ToRight(arrayOfNum)
+}
+
+fun shiftAll0ToRight(arrayOfNum : IntArray){
+    var j = 0
+    var temp = 0
+    for (i in 0..arrayOfNum.size - 1){
+        if(arrayOfNum.get(i) != 0) {
+            temp = arrayOfNum.get(i)
+            arrayOfNum.set(i, arrayOfNum.get(j))
+            arrayOfNum.set(j,temp)
+            j++
+        }
+    }
+    println("array is "+arrayOfNum.joinToString())
+}
